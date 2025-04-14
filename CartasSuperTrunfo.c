@@ -10,11 +10,16 @@ int main()      {
     float area1 =1202222.0;
     float pib1 = 12345267.0;
     int pontos_turisticos1 = 30;
-    float desnsidade = 8102.47 hab/km²
-    float pib por capita1 =  56724.32 reais;
+    float desnsidade = 8102,47 hab/km²;
+    float pib_per_capita1 = 56724.32;
 
-    float resultado = populacao1 / area1; 
-    float resulat = pib per capitia1 / populacao1;
+    float quociente = populacao1 / area1; //A divisão de população1 por área1 resulta em 8102,47 
+
+    float quociente = pib_per_capita1 / populacao1;  // Divisão de ponto flutuante 
+
+    printf("Quociente: %d\n", quociente);
+
+    printf("Quociente: %.2f\n", quociente);
 
     printf("estado: %c\n", estado1);
     printf("codigo: %s\n", carta1);
@@ -36,12 +41,16 @@ int main()      {
     float area2 = 1202222.0;
     float pib2 =12345267.0;
     int pontos_turisticos2 = 30;
-    float densidade = 5622.24 hab/km²;
-    float pib por capita2 = 44532.91 reais;
+    float densidade = 5622,24 hab/km²;
+    float pib_per_capita2 = 44532.91;
+    
+    float quociente = populacao2 / area2; //A divisão de população2 por área2 resulta em  5622,24
 
-    float resultado = populacao2 / area2;
-    float resultado = pib per capitia2 / populacao2;
+    float quociente = pib_per_capita2 / populacao2; //Divisão de ponto flutuante
 
+    printf("Quociente: %d\n", quociente)
+
+    prinf("Quociente: %.2f\n", quociente);
 
     printf("estado: %c\n", estado2);
     printf("codigo: %s\n", carta2);
