@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 int main()      {
+    /* Divisão (/) */
+
     char estado1 = 'A';
     char carta1 [4] = "A01" ;
     char    cidade1[20] ="São Paulo";
@@ -8,6 +10,11 @@ int main()      {
     float area1 =1202222.0;
     float pib1 = 12345267.0;
     int pontos_turisticos1 = 30;
+    float desnsidade = 8102.47 hab/km²
+    float pib por capita1 =  56724.32 reais;
+
+    float resultado = populacao1 / area1; 
+    float resulat = pib per capitia1 / populacao1;
 
     printf("estado: %c\n", estado1);
     printf("codigo: %s\n", carta1);
@@ -16,6 +23,9 @@ int main()      {
     printf("area: %2.f km^2\n", area1);
     printf("pib: %2.f\n", pib1);
     printf("pontos turisticos: %d\n", pontos_turisticos1);
+    
+
+
     printf("\n");//comando de pular linha
     printf("\n");// comando de pular linha
 
@@ -26,6 +36,12 @@ int main()      {
     float area2 = 1202222.0;
     float pib2 =12345267.0;
     int pontos_turisticos2 = 30;
+    float densidade = 5622.24 hab/km²;
+    float pib por capita2 = 44532.91 reais;
+
+    float resultado = populacao2 / area2;
+    float resultado = pib per capitia2 / populacao2;
+
 
     printf("estado: %c\n", estado2);
     printf("codigo: %s\n", carta2);
@@ -34,7 +50,7 @@ int main()      {
     printf("area: %2.f km^2\n", area2);
     printf("pib: %2.f\n", pib2);
     printf("pontos turisticos: %d\n", pontos_turisticos2);
-
+ 
 
     printf("\n");
     printf("\n");
