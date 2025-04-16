@@ -12,6 +12,7 @@ int main()      {
     int pontos_turisticos1 = 30;
     float desnsidade = 8102,47 hab/km²;
     float pib_per_capita1 = 56724.32;
+    float super_poder =  6 083 078 74;
 
     float quociente = populacao1 / area1; //A divisão de população1 por área1 resulta em 8102,47 
 
@@ -20,6 +21,19 @@ int main()      {
     printf("Quociente: %d\n", quociente);
 
     printf("Quociente: %.2f\n", quociente);
+
+    int população1 = 5898000;
+    int area1 = 120222.0;
+    int pib1 = 12345267.0;
+    int pib_per_capita1 = 56724.32;
+    int desnsidade1 = 8102.47;
+    int pontos_turisticos1 = 30;
+    int resultado;
+
+    resultado = populacao1 + area1 + pib1 + pib_per_capita1 + desnsidade1 + pontos_turisticos1;
+
+    printf("A soma de %d e %d é: %d\n", populacao1, area1, pib1, pib_per_capita1, desnsidade1, pontos_turisticos1); //Exibe o resultado
+
 
     printf("estado: %c\n", estado1);
     printf("codigo: %s\n", carta1);
@@ -37,20 +51,37 @@ int main()      {
     char estado2 =  'A';
     char carta2[4] = "A02";
     char cidade2[20] ="Campinas";
-    int populacao2 = 5898000;
-    float area2 = 1202222.0;
-    float pib2 =12345267.0;
-    int pontos_turisticos2 = 30;
-    float densidade = 5622,24 hab/km²;
-    float pib_per_capita2 = 44532.91;
+    int populacao2 = 6748000;
+    float area2 =1200.25 km²;
+    float pib2 =300.50;
+    int pontos_turisticos2 = 50;
+    float densidade = 8102.47 hab/km²;
+    float pib_per_capita2 = 56724.32;
+    float super_poder2 = 6 814 377 74;
+
     
     float quociente = populacao2 / area2; //A divisão de população2 por área2 resulta em  5622,24
 
     float quociente = pib_per_capita2 / populacao2; //Divisão de ponto flutuante
 
+    int populacao2 = 6748000;
+    int area2 = 1200.25;
+    int pib2 = 300.50;
+    int pib_per_capita2 = 56724.32;
+    int densidade2 = 8102.47;
+    int pontos_turisticos2 = 50;
+    int resultado2;
+
+    resultado2 = populacao2 + area2 + pib2 + pib_per_capita2 + densidade2 + pontos_turisticos2;
+    printf("A soma de %d e %d é: %d\n", populacao2, area2, pib2, pib_per_capita2, densidade2, pontos_turisticos2); //Exibe o resultado
+
+
+
+
+
     printf("Quociente: %d\n", quociente)
 
-    prinf("Quociente: %.2f\n", quociente);
+    printf("Quociente: %.2f\n", quociente);
 
     printf("estado: %c\n", estado2);
     printf("codigo: %s\n", carta2);
