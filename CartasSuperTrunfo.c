@@ -10,9 +10,9 @@ int main()      {
     float area1 =1202222.0;
     float pib1 = 12345267.0;
     int pontos_turisticos1 = 30;
-    float desnsidade = 8102,47 hab/km²;
+    float densidade1 = 8102.47;
     float pib_per_capita1 = 56724.32;
-    float super_poder =  6 083 078 74;
+    float super_poder = 608307874.0;
 
     float quociente = populacao1 / area1; //A divisão de população1 por área1 resulta em 8102,47 
 
@@ -57,7 +57,7 @@ int main()      {
     int pontos_turisticos2 = 50;
     float densidade = 8102.47 hab/km²;
     float pib_per_capita2 = 56724.32;
-    float super_poder2 = 6 814 377 74;
+    float super_poder2 = 681437774.0;
 
     
     float quociente = populacao2 / area2; //A divisão de população2 por área2 resulta em  5622,24
@@ -75,6 +75,9 @@ int main()      {
     resultado2 = populacao2 + area2 + pib2 + pib_per_capita2 + densidade2 + pontos_turisticos2;
     printf("A soma de %d e %d é: %d\n", populacao2, area2, pib2, pib_per_capita2, densidade2, pontos_turisticos2); //Exibe o resultado
 
+    unsigned int super_poder = 608307874.0;
+    unsigned int super_poder2 = 681437774.0;
+
 
 
 
@@ -90,10 +93,18 @@ int main()      {
     printf("area: %2.f km^2\n", area2);
     printf("pib: %2.f\n", pib2);
     printf("pontos turisticos: %d\n", pontos_turisticos2);
- 
+
+
 
     printf("\n");
-    printf("\n");
+
+    if densidade1 > densidade2 {
+        printf("A cidade %s tem uma densidade populacional maior que %s\n", cidade1, cidade2);
+    } else if (densidade1 < densidade2) {
+        printf("A cidade %s tem uma densidade populacional menor que %s\n", cidade1, cidade2);
+    } else {
+        printf("As cidades %s e %s têm a mesma densidade populacional\n", cidade1, cidade2);
+    }
 
     return 0;
 
