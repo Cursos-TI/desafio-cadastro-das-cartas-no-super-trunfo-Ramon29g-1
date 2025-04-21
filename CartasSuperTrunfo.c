@@ -1,4 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
+#include <math.h>
+#include <ctype.h>
 
 int main()      {
     /* Divisão (/) */
@@ -12,7 +17,7 @@ int main()      {
     int pontos_turisticos1 = 30;
     float densidade1 = 8102.47;
     float pib_per_capita1 = 56724.32;
-    float super_poder = 608307874.0;
+    float super_poder1 = 608307874.0;
 
     float quociente = populacao1 / area1; //A divisão de população1 por área1 resulta em 8102,47 
 
@@ -26,13 +31,13 @@ int main()      {
     int area1 = 120222.0;
     int pib1 = 12345267.0;
     int pib_per_capita1 = 56724.32;
-    int desnsidade1 = 8102.47;
+    int densidade1 = 8102.47;
     int pontos_turisticos1 = 30;
     int resultado;
 
-    resultado = populacao1 + area1 + pib1 + pib_per_capita1 + desnsidade1 + pontos_turisticos1;
+    resultado = populacao1 + area1 + pib1 + pib_per_capita1 + densidade1 + pontos_turisticos1;
 
-    printf("A soma de %d e %d é: %d\n", populacao1, area1, pib1, pib_per_capita1, desnsidade1, pontos_turisticos1); //Exibe o resultado
+    printf("A soma de %d e %d é: %d\n", populacao1, area1, pib1, pib_per_capita1, densidade1, pontos_turisticos1); //Exibe o resultado
 
 
     printf("estado: %c\n", estado1);
@@ -99,13 +104,24 @@ int main()      {
     printf("\n");
 
     if densidade1 > densidade2 {
-        printf("A cidade %s tem uma densidade populacional maior que %s\n", cidade1, cidade2);
-    } else if (densidade1 < densidade2) {
-        printf("A cidade %s tem uma densidade populacional menor que %s\n", cidade1, cidade2);
+        printf("A carta1 venceu\n");
+    } else if densidade1< densidade2 {
+        printf("A carta2 venceu\n");
     } else {
-        printf("As cidades %s e %s têm a mesma densidade populacional\n", cidade1, cidade2);
+        printf("Empate\n");
     }
+    switch (super_poder) {
+        case 1:
+            printf("A carta1 venceu\n");
+            break;
+        case 2:
+            printf("A carta2 venceu\n");
+            break;
+        default:
+            printf("Empate\n");
+            break;
 
+    }
     return 0;
 
 }
